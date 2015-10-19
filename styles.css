@@ -13,6 +13,16 @@ body {
 	background-position: center;
 }
 
+#header-eng {
+	background-color: #fff;
+	width: 100%;
+	height: 320px;
+	background-image: url("face-eng.jpg");
+	background-size: auto 320px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 #subheader {
 	background-color: #fff;
 	display: flex;
