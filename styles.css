@@ -78,3 +78,17 @@ body {
 	-moz-box-shadow: 0px 3px 40px 0px rgba(140,140,140,1);
 	box-shadow: 0px 3px 40px 0px rgba(140,140,140,1);
 }
+
+#footer {
+	display: flex;
+	justify-content: center;
+}
+
+.social-button {
+	margin: 5px;
+	-webkit-filter: grayscale(1);
+}
+
+.social-button:hover {
+	-webkit-filter: grayscale(0);
+}
