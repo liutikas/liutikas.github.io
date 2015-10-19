@@ -15,7 +15,6 @@ body {
 
 #subheader {
 	background-color: #fff;
-	height: 65px;
 	display: flex;
     justify-content: center;
 	padding-right: 10%;
@@ -27,6 +26,7 @@ body {
 	width: 316px;
 	height: 65px;
 	float: left;
+	align-self: center;
 	background-image: url("logo.png");
 	background-repeat: no-repeat;
 	background-position: center;
