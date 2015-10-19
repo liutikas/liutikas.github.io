@@ -16,6 +16,7 @@ body {
 #subheader {
 	background-color: #fff;
 	display: flex;
+	flex-wrap: wrap;
     justify-content: center;
 	padding-right: 10%;
 	padding-left: 10%;
@@ -25,7 +26,6 @@ body {
 #logo {
 	width: 316px;
 	height: 65px;
-	float: left;
 	align-self: center;
 	background-image: url("logo.png");
 	background-repeat: no-repeat;
@@ -34,19 +34,21 @@ body {
 }
 
 #menu {
+	min-width: 300px;
 	align-self: center;
-	margin: 0 10px;
+	margin: 10px;
 }
 
 #menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
 }
 
 #menu li {
-	float: left;
+	text-align: center;
+    flex-grow: 1;
 }
 
 #menu a:link, a:visited {
