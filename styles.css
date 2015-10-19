@@ -73,6 +73,14 @@ body {
 	font-size: 18px;
 }
 
+#content a:link, a:visited {
+	color: #666;
+}
+
+#content a:hover, a:active {
+	color: #299ACC;
+}
+
 .shadow {
 	-webkit-box-shadow: 0px 3px 40px 0px rgba(140,140,140,1);
 	-moz-box-shadow: 0px 3px 40px 0px rgba(140,140,140,1);
