@@ -3,6 +3,22 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+a:link {
+	color: #666;
+}
+
+a:visited {
+	color: #666;
+}
+
+a:hover {
+	color: #299ACC;
+}
+
+a:active {
+	color: #299ACC;
+}
+
 #header {
 	background-color: #000;
 	width: 100%;
@@ -61,16 +77,17 @@ body {
     flex-grow: 1;
 }
 
-#menu a:link, a:visited {
-    display: block;
-    padding: 3px 8px 3px 8px;
-    text-decoration: none;
-    color: #666;
-    background-color: #fff;
+a.menu_link {
+	text-decoration: none;
+	padding: 3px 8px 3px 8px;
+	display: block;
 }
 
-#menu a:hover, a:active {
+a.menu_link_current {
 	color: #299ACC;
+	text-decoration: none;
+	padding: 3px 8px 3px 8px;
+	display: block;
 }
 
 #content {
@@ -84,18 +101,10 @@ body {
 	font-size: 18px;
 }
 
-#content a:link, a:visited {
-	color: #666;
-}
-
-#content a:hover, a:active {
-	color: #299ACC;
-}
-
 .shadow {
-	-webkit-box-shadow: 0px 3px 40px 0px rgba(140,140,140,1);
-	-moz-box-shadow: 0px 3px 40px 0px rgba(140,140,140,1);
-	box-shadow: 0px 3px 40px 0px rgba(140,140,140,1);
+	-webkit-box-shadow: 0px 3px 40px 0px rgba(140,140,140,0.7);
+	-moz-box-shadow: 0px 3px 40px 0px rgba(140,140,140,0.7);
+	box-shadow: 0px 3px 40px 0px rgba(140,140,140,0.7);
 }
 
 #footer {
