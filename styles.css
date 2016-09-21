@@ -20,7 +20,7 @@ a:active {
 }
 
 #header {
-	background-color: #000;
+	background-color: #0e0e0c;
 	width: 100%;
 	height: 320px;
 	background-image: url("face.jpg");
@@ -30,7 +30,7 @@ a:active {
 }
 
 #header-eng {
-	background-color: #fff;
+	background-color: #a8b3b5;
 	width: 100%;
 	height: 320px;
 	background-image: url("face-eng.jpg");
