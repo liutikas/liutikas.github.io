@@ -9,7 +9,8 @@
 
   <link rel="icon" sizes="192x192" href="{{ "/favicon.png" | relative_url }}">
   <meta name="theme-color" content="#000">
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <style>{% include main.css %}</style>
+  <!--<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">-->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   
   {% if jekyll.environment == 'production' and site.google_analytics %}

@@ -23,7 +23,7 @@ a:active {
 	background-color: #0e0e0c;
 	width: 100%;
 	height: 320px;
-	background-image: url("face.jpg");
+	background-image: url("{{ "/assets/face.jpg" | relative_url }}");
 	background-size: auto 320px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -33,7 +33,7 @@ a:active {
 	background-color: #bfc8cd;
 	width: 100%;
 	height: 320px;
-	background-image: url("face-eng.jpg");
+	background-image: url("{{ "/assets/face-eng.jpg" | relative_url }}");
 	background-size: auto 320px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -43,7 +43,7 @@ a:active {
 	background-color: #14130f;
 	width: 100%;
 	height: 320px;
-	background-image: url("face-photo.jpg");
+	background-image: url("{{ "/assets/face-photo.jpg" | relative_url }}");
 	background-size: auto 320px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -64,7 +64,7 @@ a:active {
 	width: 316px;
 	height: 65px;
 	align-self: center;
-	background-image: url("logo.png");
+	background-image: url("{{ "/assets/logo.png" | relative_url }}");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
