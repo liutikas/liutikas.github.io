@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Gradle repositories {} Galore
 permalink: /blog/1
 header: header-eng
