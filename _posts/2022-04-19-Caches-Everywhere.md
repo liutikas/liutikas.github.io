@@ -26,4 +26,4 @@ Gradle serializes all the tasks with all the inputs that might invalidate how th
 
 - [*GRADLE_USER_HOME*](https://docs.gradle.org/current/userguide/directory_layout.html#dir:gradle_user_home) - a directory (by default `~/.gradle`) that Gradle uses to store various non-project specific global state, including Gradle wrapper cache (extracted `gradle-X.X-bin.zip`) and artifact cache (to avoid redownloading maven dependencies)
 
-- *Android Studio cache* - the infamous `Invalidate Caches / Restart` that solves all of your Studio problems. This is in fact a collection of Gradle (e.g. *GRADLE_USER_HOME*) and Android Studio state needed for Gradle to work correctly.
+- *Android Studio cache* - the infamous `Invalidate Caches / Restart` that solves all of your Studio problems. This is in fact does not touch any of the Gradle caches, instead [it clears various Intellij state like indexes](https://www.jetbrains.com/help/idea/invalidate-caches.html).
