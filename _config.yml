@@ -23,3 +23,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 
 google_analytics: UA-20711437-1
+
+plugins:
+  - jekyll-feed

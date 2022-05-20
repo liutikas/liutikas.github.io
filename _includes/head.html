@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#000">
   <style>{% include main.css %}</style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  
+  {% feed_meta %}
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
