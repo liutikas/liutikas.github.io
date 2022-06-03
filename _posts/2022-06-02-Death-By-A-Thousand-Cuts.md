@@ -17,9 +17,9 @@ or applying plugins just in case you'll need it at some point.
 Another consideration is to make your [Gradle configuration as lazy as possible](https://docs.gradle.org/current/userguide/lazy_configuration.html)
 moving to properties and providers so that the heavy work is only done when
 your task is executed. You should avoid I/O (e.g. reading contents of a file),
-calling external processed (e.g. getting git commit), making network calls, or
+calling external processes (e.g. getting git commit), making network calls, or
 other heavy computations during the configuration phase. Don't hesitate to file
-bugs to plugins that haven't migrated - it is the time for them to move to modern
+bugs to plugins that haven't migrated yet - it is time for them to move to modern
 Gradle APIs.
 
 Next, for the work that *must* happen in configuration evaluate whether it
