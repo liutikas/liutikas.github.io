@@ -22,10 +22,10 @@ other heavy computations during the configuration phase. Don't hesitate to file
 bugs to plugins that haven't migrated yet - it is time for them to move to modern
 Gradle APIs.
 
-Next, for the work that *must* happen in configuration evaluate whether it
+Next, for the work that *must* happen in the configuration, evaluate whether it
 would be enough if was done on the rootProject only. If that is not the case,
 then see if you can use a [build service](https://docs.gradle.org/current/userguide/build_services.html)
-to share part of the work between all the tasks. In AndroidX we use a build
+to share parts of the work between all the tasks. In AndroidX we use a build
 service to load a TOML file that holds some build configuration which gets
 computed with the first call to the service and the rest of the tasks get the
 cached value.
