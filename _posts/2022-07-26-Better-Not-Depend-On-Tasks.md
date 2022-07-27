@@ -31,7 +31,10 @@ We would then set these tasks up using something like:
 ```kotlin
 
 val oldWriterFile = project.buildDir.resolve("oldWriter.txt")
-val oldWriterTask = tasks.register("oldWriter", OldWriter::class) {
+val oldWriterTask = tasks.register(
+  "oldWriter",
+  OldWriter::class
+) {
   list.addAll(listOf("apple", "orange", "banana"))
   outputFile = oldWriterFile
 }
@@ -76,7 +79,10 @@ so we can let Gradle initialize `RegularFileProperty`, and `ListProperty` for us
 
 To set configure these tasks we use:
 ```kotlin
-val newWriterTask = tasks.register("newWriter", NewWriter::class) {
+val newWriterTask = tasks.register(
+  "newWriter",
+  NewWriter::class
+) {
   list.addAll("apple", "orange", "banana")
   outputFile.set(layout.buildDirectory.file("newWriter.txt"))
 }

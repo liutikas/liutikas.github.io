@@ -4,7 +4,8 @@ layout: default
 <article class="post">
 
   <div class="post-content">
-    Posted on {{ page.date | date: "%Y-%m-%d" }}
+    <div><b>{{ page.title }}</b></div>
+    <div>Posted on {{ page.date | date: "%Y-%m-%d" }}</div>
     {{ content }}
   </div>
 
