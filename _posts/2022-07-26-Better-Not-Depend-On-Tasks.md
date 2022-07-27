@@ -97,4 +97,4 @@ write out, you can just call `list.set(someProviderHere)`, potentially even
 using `flatMap` as in the example above.
 
 To summarize, any time you see `dependsOn` in your code, you should be eyeing it
-with suspicion as there are more robust ways available to write-up your tasks.
+with suspicion as there are more robust ways available to wire-up your tasks.
