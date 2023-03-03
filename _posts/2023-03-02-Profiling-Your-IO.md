@@ -53,5 +53,5 @@ fix for this in Gradle 8.1.
 
 Using the same process, I was also able to find that AndroidX buildSrc code was
 doing I/O during configuration phase to check if a given project has any test
-code and [got to remove it](https://android-review.git.corp.google.com/c/platform/frameworks/support/+/2460054)
+code and [got to remove it](https://r.android.com/2460054)
 saving us hundreds of I/O calls in this phase.
