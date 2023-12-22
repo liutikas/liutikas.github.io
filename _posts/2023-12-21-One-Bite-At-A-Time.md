@@ -32,12 +32,12 @@ were spending all of our time in `FileInputStream.read`.
 
 ![Screenshot of a flamegraph for fetching the cache entyr](/assets/2023-12-21-flamegraph.png){:width="600px"}
 
-And then it downed on us, we were not doing any sort of buffering for this!!!
+And then it dawned on us, we were not doing any sort of buffering for this!!!
 [A small PR later](https://github.com/androidx/gcp-gradle-build-cache/pull/40)
 we went from [82s (750KBps)](https://ge.androidx.dev/s/q36vklz4xyytw/performance/build-cache?anchor=eyJpZCI6InJlbW90ZS1oaXQifQ&cacheDetails=remote-hit)
 to [1.7s (36.8MBps)](https://ge.androidx.dev/s/qn2ueapsujhjq/performance/build-cache?anchor=eyJpZCI6InJlbW90ZS1oaXQifQ&cacheDetails=remote-hit)
 to download the same remote cache entry.
 
 Moral of the story? Always be buffering your input streams! How did I not learn
-this from [I/O profiling](({% post_url 2023-03-02-Profiling-Your-IO %})) earlier
+this from [I/O profiling]({% post_url 2023-03-02-Profiling-Your-IO %}) earlier
 this year?
