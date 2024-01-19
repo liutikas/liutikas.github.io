@@ -3,6 +3,10 @@ body {
 	font-family: sans-serif;
 }
 
+pre {
+  overflow-x: auto;
+}
+
 a:link {
 	color: #666;
 }
