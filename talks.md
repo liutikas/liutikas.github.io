@@ -10,6 +10,9 @@ header: header-eng
 <p>2024</p>
 <p id="content-center">
 <p>
+Taming the Monorepo Beast - DPE Summit SF 2024 (<a href="https://speakerdeck.com/aurimas/taming-the-monorepo-beast-how-we-made-androidx-library-releases-at-scale-more-bearable">slides</a>)
+</p>
+<p>
 <a href="https://www.droidcon.com/2024/07/17/ultimate-iteration-speeds-with-gradle-configuration-cache/">Ultimate Iteration Speeds with Gradle Configuration Cache - droidcon SF 2024</a> (<a href="https://speakerdeck.com/aurimas/ultimate-iteration-speeds-with-gradle-configuration-cache">slides</a>)
 </p>
 
