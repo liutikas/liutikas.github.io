@@ -19,3 +19,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jekyll-feed'
 gem "webrick", "~> 1.8"
+
+gem "ffi", force_ruby_platform: true

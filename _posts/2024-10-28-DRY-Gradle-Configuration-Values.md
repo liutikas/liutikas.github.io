@@ -79,7 +79,8 @@ class MyPlugin : Plugin<Project> {
 }
 ```
 
-This lets you keep your `settings.gradle.kts` nice and tidy!
+This lets you keep your `settings.gradle.kts` nice and tidy! You can take a look at [an end-to-end example repository
+on GitHub](https://github.com/liutikas/gradle-share-configuration).
 
 Note, if you only need to set your `minSdk` default, Android Gradle Plugin team has in fact done all the work already
 by creating the [`com.android.settings` settings plugin](https://developer.android.com/reference/tools/gradle-api/8.7/com/android/build/api/dsl/SettingsExtension#minSdk()),
