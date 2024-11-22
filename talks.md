@@ -10,7 +10,7 @@ header: header-eng
 <p>2024</p>
 <p id="content-center">
 <p>
-Gradle: The Build System That Loves To Hate You - droidcon London 2024 (<a href="https://speakerdeck.com/aurimas/gradle-the-build-system-that-loves-to-hate-you">slides</a>)
+<a href="https://www.droidcon.com/2024/11/22/gradle-the-build-system-that-loves-to-hate-you/">Gradle: The Build System That Loves To Hate You - droidcon London 2024</a> (<a href="https://speakerdeck.com/aurimas/gradle-the-build-system-that-loves-to-hate-you">slides</a>)
 </p>
 <p>
 <a href="https://www.youtube.com/watch?v=gUtPPbsMBlY">Taming the Monorepo Beast - DPE Summit SF 2024</a> (<a href="https://speakerdeck.com/aurimas/taming-the-monorepo-beast-how-we-made-androidx-library-releases-at-scale-more-bearable">slides</a>)
