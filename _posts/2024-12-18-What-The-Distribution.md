@@ -7,6 +7,7 @@ header: header-eng
 When I saw [this post](https://bsky.app/profile/goetas.com/post/3ldlafyd62c2s)
 
 ![A BlueSky post asking why is Gradle ~200MB in size](/assets/2024-12-18-bluesky.png){:width="600px"}
+
 I first giggled, but then honestly wanted to answer their question. How here it goes!
 
 Gradle has two flavors of distributions: `gradle-8.11.1-all.zip` and `gradle-8.11.1-bin.zip`, their
