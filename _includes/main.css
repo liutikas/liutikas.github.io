@@ -92,7 +92,7 @@ a:active {
     flex-grow: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #menu ul {
     flex-direction: column; /* Stack list items vertically */
   }
@@ -121,7 +121,7 @@ a.menu_link_current {
 	margin-bottom: 50px;
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 900px;
+	max-width: 800px;
 	width: 80%;
 	color: #333;
 	font-size: 18px;
