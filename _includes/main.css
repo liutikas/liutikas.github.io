@@ -110,7 +110,7 @@ a.menu_link_current {
 	margin-bottom: 50px;
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 700px;
+	max-width: 900px;
 	width: 80%;
 	color: #333;
 	font-size: 18px;
@@ -142,6 +142,9 @@ a.menu_link_current {
 	-webkit-filter: grayscale(0);
 }
 
+.highlight pre {
+  padding: 10px;
+}
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .cm {
