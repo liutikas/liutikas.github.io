@@ -92,6 +92,17 @@ a:active {
     flex-grow: 1;
 }
 
+@media (max-width: 600px) {
+  #menu ul {
+    flex-direction: column; /* Stack list items vertically */
+  }
+
+  #menu li {
+    flex-grow: 0; /* Remove flex-grow to prevent items from stretching */
+    width: 100%; /* Make each item take full width */
+  }
+}
+
 a.menu_link {
 	text-decoration: none;
 	padding: 3px 8px 3px 8px;
