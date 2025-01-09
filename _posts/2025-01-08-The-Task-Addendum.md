@@ -67,6 +67,9 @@ eventually by locking task inputs after configuration is complete, but it still 
 
 Hopefully, this post gives you ideas of how you can add outputs to `Test` and other tasks.
 You can also do similar things with `Task.inputs`, but if you do, remember to also [normalize your
-input]({% post_url 2022-11-07-Just-Sensitive-Enough-Inputs %}) like `inputs.dir(testInput).withPathSensitivity(PathSensitivity.RELATIVE)`
+input]({% post_url 2022-11-07-Just-Sensitive-Enough-Inputs %}) like
+```kotlin
+inputs.dir(testInput).withPathSensitivity(PathSensitivity.RELATIVE)
+```
 
 Happy tinkering!
