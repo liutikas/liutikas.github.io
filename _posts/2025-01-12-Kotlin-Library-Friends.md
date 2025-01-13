@@ -44,10 +44,10 @@ Kotlin `2.1`, and now you will get a warning that will eventually be an insuppre
 
 Is there a different way?
 
-One might wonder, how does `src/main` and `src/test` compilations work, as they are two different Kotlin invocations in
-Gradle. If you look [at the compiler argument options](https://github.com/JetBrains/kotlin/blob/2.1.0/compiler/cli/cli-common/src/org/jetbrains/kotlin/cli/common/arguments/K2JVMCompilerArguments.kt#L520)
-you'll find `-Xfriend-paths=path/to/classes/` that is used for `src/test` to be able to access `src/main` `internal`
-types. If we were naughty, we could use this same mechanism for ourselves with external libraries.
+One might wonder, how do `src/main` and `src/test` compilations work, as they are two different Kotlin invocations in
+Gradle and `src/test` is able to access `src/main` `internal` types. If you look [at the compiler argument options](https://github.com/JetBrains/kotlin/blob/2.1.0/compiler/cli/cli-common/src/org/jetbrains/kotlin/cli/common/arguments/K2JVMCompilerArguments.kt#L520)
+you'll find `-Xfriend-paths=path/to/classes/` which is the mechanism for this. If we were naughty, we could use this
+same argument for ourselves with an external library.
 
 ```kotlin
 // Create a configuration we can use to track friend libraries
@@ -70,6 +70,8 @@ dependencies {
     friends("org.example:secret-sauce:1.0.0")
 }
 ```
+
+Now, we no longer need the suppression, all the `internal` types will show up as if they were part of our own library.
 
 *Note*, any use of `internal` types is completely at your own risk, they are hidden on purpose and thus you might break
 the library or the library owners will break you on the library update.
