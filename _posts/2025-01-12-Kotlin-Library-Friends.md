@@ -31,7 +31,7 @@ e: file:///.../Library.kt:8:5 Cannot access 'class SecretSauce : Any': it is int
 e: file:///.../Library.kt:8:19 Cannot access 'class SecretSauce : Any': it is internal in file.
 ```
 
-That's good! Library internal bits should not accessible be to you. However, we can bypass these errors with
+That's good! Library internal bits should not be accessible to you. However, we can bypass these errors with
 ```kotlin
 @file:Suppress("INVISIBLE_MEMBER", "INVISIBLE_REFERENCE")
 ```
