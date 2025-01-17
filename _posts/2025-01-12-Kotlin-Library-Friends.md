@@ -60,10 +60,7 @@ val friends = configurations.create("friends") {
 configurations.findByName("implementation")?.extendsFrom(friends)
 // Make these libraries friends :) 
 tasks.withType<KotlinJvmCompile>().configureEach {
-    val friendCollection = friends.incoming.artifactView { }.files
-    compilerOptions.freeCompilerArgs.add(
-        provider { "-Xfriend-paths=${friendCollection.joinToString(",")}"}
-    )
+    friendPaths.from(friends.incoming.artifactView { }.files)
 }
 // Add libraries you want to 
 dependencies {
