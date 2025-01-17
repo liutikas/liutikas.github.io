@@ -68,7 +68,8 @@ dependencies {
 }
 ```
 
-Now, we no longer need the suppression, all the `internal` types will show up as if they were part of our own library.
+Now, we no longer need the suppression, all the `internal` types will be accessible as if they were part of our own
+library. Sadly, it does seem that Intellij / Android Studio understand these sneaky friendships.
 
-*Note*, any use of `internal` types is completely at your own risk, they are hidden on purpose and thus you might break
+*Note*, any use of `internal` types is completely at your own risk, they are hidden on purpose, and thus you might break
 the library or the library owners will break you on the library update.
