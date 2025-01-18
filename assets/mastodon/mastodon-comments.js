@@ -102,7 +102,7 @@ const styles = `
 }
 
 .mastodon-comment .status .replies.active a, #mastodon-stats .replies.active a {
-  color: #003eaa;
+  color: #3d87ff;
 }
 
 .mastodon-comment .status .reblogs.active a, #mastodon-stats .reblogs.active a {
@@ -172,7 +172,7 @@ class MastodonComments extends HTMLElement {
       <div class="replies ${this.toot_active(toot, "replies")}">
         <a href="${
           toot.url
-        }" rel="nofollow"><i class="fa fa-reply fa-fw"></i>${this.toot_count(
+        }" rel="nofollow"><img src="/assets/reply.png" width="20px" height="20px" style="vertical-align: middle; filter: sepia(1) saturate(10) hue-rotate(200deg);">${this.toot_count(
           toot,
           "replies",
         )}</a>
@@ -180,7 +180,7 @@ class MastodonComments extends HTMLElement {
       <div class="reblogs ${this.toot_active(toot, "reblogs")}">
         <a href="${
           toot.url
-        }" rel="nofollow"><i class="fa fa-retweet fa-fw"></i>${this.toot_count(
+        }" rel="nofollow"><img src="/assets/share.png" width="20px" height="20px" style="vertical-align: middle; filter: sepia(1) saturate(10) hue-rotate(220deg);">${this.toot_count(
           toot,
           "reblogs",
         )}</a>
@@ -188,7 +188,7 @@ class MastodonComments extends HTMLElement {
       <div class="favourites ${this.toot_active(toot, "favourites")}">
         <a href="${
           toot.url
-        }" rel="nofollow"><i class="fa fa-star fa-fw"></i>${this.toot_count(
+        }" rel="nofollow"><img src="/assets/star.png" width="20px" height="20px" style="vertical-align: middle; filter: sepia(1) saturate(10) hue-rotate(25deg);">${this.toot_count(
           toot,
           "favourites",
         )}</a>
