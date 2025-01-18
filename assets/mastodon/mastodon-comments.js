@@ -134,7 +134,7 @@ class MastodonComments extends HTMLElement {
       <div id="mastodon-stats"></div>
       <h2>Comments</h2>
 
-      <p>You can use your Fediverse (i.e. Mastodon, among many others) account to reply to this <a class="link"
+      <p>You can use your Fediverse account to reply to this <a class="link"
           href="https://${this.host}/@${this.user}/${this.tootId}">post</a>.
       </p>
       <p id="mastodon-comments-list"></p>
@@ -311,7 +311,7 @@ class MastodonComments extends HTMLElement {
           _this.render_toots(data["descendants"], _this.tootId, 0);
         } else {
           document.getElementById("mastodon-comments-list").innerHTML =
-            "<p>No comments found</p>";
+            "<p>No comments yet</p>";
         }
 
         _this.commentsLoaded = true;
