@@ -2,6 +2,7 @@
 layout: post
 title:  Profiling your I/O
 header: header-eng
+mastodon: 109957210996122611
 ---
 
 In [Profiling - The Good Kind]({% post_url 2022-06-01-Profiling-The-Good-Kind %})

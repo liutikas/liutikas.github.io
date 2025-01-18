@@ -2,6 +2,7 @@
 layout: post
 title:  Together in Isolation - Isolated Project Safe Way to Aggregate Optional Artifacts 
 header: header-eng
+mastodon: 113636641240393878
 ---
 
 One common thing to do in a Gradle project is collect artifacts from a subset of projects to produce an aggregate

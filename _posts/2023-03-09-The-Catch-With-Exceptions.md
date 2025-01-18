@@ -2,6 +2,7 @@
 layout: post
 title:  The Catch in Using Exceptions for Control Flow
 header: header-eng
+mastodon: 109996037256851014
 ---
 
 Continuing my series of posts about profiling Gradle, I'd like to share how I

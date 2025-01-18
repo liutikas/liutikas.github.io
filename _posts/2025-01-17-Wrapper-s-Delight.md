@@ -2,6 +2,7 @@
 layout: post
 title:  Wrapper's delight - Gradle wrapper task uses
 header: header-eng
+mastodon: 113846220039936474
 ---
 
 Gradle has a built-in task called `wrapper` that `./gradlew tasks` describes with:

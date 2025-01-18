@@ -2,6 +2,7 @@
 layout: post
 title:  What The Distribution - What Is Inside Gradle Distribution Zips?
 header: header-eng
+mastodon: 113678013577947552
 ---
 
 When I saw [this post](https://bsky.app/profile/goetas.com/post/3ldlafyd62c2s)

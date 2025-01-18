@@ -2,6 +2,7 @@
 layout: post
 title:  Kotlin Library Friends - Using the Internals
 header: header-eng
+mastodon: 113819990485116108
 ---
 
 Let's say there is a library out there that has a very useful `internal` method inside of it.

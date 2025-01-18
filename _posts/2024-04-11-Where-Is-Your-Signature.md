@@ -2,6 +2,7 @@
 layout: post
 title:  Where is Your Signature?
 header: header-eng
+mastodon: 112255414472338899
 ---
 
 AndroidX project uses [Gradle signature verification](https://docs.gradle.org/current/userguide/dependency_verification.html#sec:signature-verification)

@@ -2,6 +2,7 @@
 layout: post
 title:  Evaluate your afterEvaluate
 header: header-eng
+mastodon: 109485837722240140
 ---
 
 You've probably seen dozens of Stack Overflow answers to Gradle problems to

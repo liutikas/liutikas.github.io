@@ -2,6 +2,7 @@
 layout: post
 title:  DRY - Gradle Configuration Values
 header: header-eng
+mastodon: 113387520995599741
 ---
 
 As you work on your Gradle builds you might find a need to centralize your build configuration, for example you might

@@ -2,6 +2,7 @@
 layout: post
 title:  One Bite At A Time
 header: header-eng
+mastodon: 111621422904232267
 ---
 
 As part of our regular Gradle build scan investigation we looked at an AndroidX

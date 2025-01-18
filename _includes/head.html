@@ -14,4 +14,7 @@
   <style>{% include main.css %}</style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   {% feed_meta %}
+  {% if page.mastodon %}
+  {% include mastodon-comments.html %}
+  {% endif %}
 </head>

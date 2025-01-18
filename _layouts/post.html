@@ -7,6 +7,10 @@ layout: default
     <div><b>{{ page.title }}</b></div>
     <div>Posted on {{ page.date | date: "%Y-%m-%d" }}</div>
     {{ content }}
+
+    {% if page.mastodon %}
+    <mastodon-comments host="androiddev.social" user="Aurimas" tootId="{{ page.mastodon }}"></mastodon-comments>
+    {% endif %}
   </div>
 
 </article>

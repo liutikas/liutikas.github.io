@@ -2,6 +2,7 @@
 layout: post
 title:  Trust But Verify - Enabling Gradle Signature Verification for An Android Project 
 header: header-eng
+mastodon: 113641757078902839
 ---
 
 In my post on [Gradle Security Considerations]({% post_url 2022-05-13-Gradle-Security-Considerations %}) I suggested

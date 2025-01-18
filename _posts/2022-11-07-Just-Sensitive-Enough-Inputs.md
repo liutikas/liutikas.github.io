@@ -2,6 +2,7 @@
 layout: post
 title:  Making Gradle Inputs Just Sensitive Enough
 header: header-eng
+mastodon: 109303921927686569
 ---
 
 Gradle wants all your tasks to have inputs and outputs annotated in order to

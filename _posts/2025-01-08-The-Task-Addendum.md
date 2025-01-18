@@ -2,6 +2,7 @@
 layout: post
 title:  The Task Addendum - Add Outputs to A Task You Don't Own
 header: header-eng
+mastodon: 113796696840710051
 ---
 
 The best way to extend a functionality of a Gradle task is by adding an input or an output.

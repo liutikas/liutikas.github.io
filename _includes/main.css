@@ -369,3 +369,15 @@ a.menu_link_current {
 .highlight {
   background-color: #f8f8f8;
 }
+
+mastodon-comments {
+    --font-color: #333;
+    --font-size: 1.0rem;
+
+    --block-border-width: 1px;
+    --block-border-radius: 3px;
+    --block-border-color: #ededf0;
+    --block-background-color: #f8f8f8;
+
+    --comment-indent: 20px;
+}
