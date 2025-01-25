@@ -2,13 +2,14 @@
 layout: post
 title:  Groovy Who? Exploring Declarative Gradle
 header: header-eng
+mastodon: 113886361338469722
 ---
 
 You [probably spent a long time debating](https://github.com/gradle/gradle/issues/15886) on whether `build.gradle`
 (Groovy) or `build.gradle.kts` (Kotlin Script) is more awesome. Lucky for you, we are about to have
-[a third kid on the block](https://xkcd.com/927/) - `build.gradle.dcl` a.k.a. declarative Gradle build file. I spent a
-week trying it out as part of my team hackathon to see how well this would work for a large build like androidx
-and I would like to share some of my high-level findings.
+[a third kid on the block](https://xkcd.com/927/) - `build.gradle.dcl` a.k.a. [Declarative Gradle](https://declarative.gradle.org/)
+build file. I spent a week trying it out as part of my team hackathon to see how well this would work for a large build
+like androidx and I would like to share some of my high-level findings.
 
 **Disclaimer**: This is the experience as of declarative Gradle EAP 2, so things might change as features evolve.
 
