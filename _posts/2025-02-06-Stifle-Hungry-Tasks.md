@@ -2,6 +2,7 @@
 layout: post
 title:  Stifle Hungry Tasks using BuildService
 header: header-eng
+mastodon: 113959816328576682
 ---
 
 On a reasonably sized project that follows [Gradle's best practices](https://github.com/liutikas/gradle-best-practices)
