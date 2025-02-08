@@ -2,6 +2,7 @@
 layout: post
 title:  Tragedy of Build Classpath
 header: header-eng
+mastodon: 113965679539519729
 ---
 
 Gradle is a JVM application and Gradle Plugins are libraries that get loaded on the Gradle build classpath in order to
