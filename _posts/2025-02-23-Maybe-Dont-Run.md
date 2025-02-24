@@ -2,6 +2,7 @@
 layout: post
 title:  Maybe Don't Run - Optional Tasks
 header: header-eng
+mastodon: 114055247286261007
 ---
 
 You might encounter situations where a Gradle task shouldn't run based on condition that's expensive to compute.
