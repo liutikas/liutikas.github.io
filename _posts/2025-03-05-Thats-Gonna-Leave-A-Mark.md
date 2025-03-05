@@ -5,7 +5,7 @@ header: header-eng
 mastodon: 114112468305378132
 ---
 
-You've likely encountered plugin declaration like this:
+You've likely encountered plugin declarations like this:
 
 ```kotlin
 plugins {
