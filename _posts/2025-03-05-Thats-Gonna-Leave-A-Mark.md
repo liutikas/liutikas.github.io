@@ -5,7 +5,7 @@ header: header-eng
 mastodon: 114112468305378132
 ---
 
-You might have seen
+You've likely encountered plugin declaration like this:
 
 ```kotlin
 plugins {
@@ -14,16 +14,16 @@ plugins {
 }
 ```
 
-and wondered how does Gradle know where to find these plugin. I hope this post can help you answer that.
+And you might have wondered how Gradle locates these plugin. This post aims to demystify that process.
 
-The easy part of the answer is that Gradle ships a number of plugins inside its distribution. Gradle calls them
-[core plugins](https://docs.gradle.org/current/userguide/plugin_reference.html#plugin_reference) and examples of these
-are `id("java-library")`, `id("maven-publish")`, and `"id(signing")`. As these plugins are part of [the distribution
-Gradle]({% post_url 2024-12-18-What-The-Distribution %}) their jars already on your machine by the time you run Gradle.
+The simpler aspect is that Gradle includes a set of plugins within its distribution, known as [core plugins](https://docs.gradle.org/current/userguide/plugin_reference.html#plugin_reference).
+Examples include `id("java-library")`, `id("maven-publish")`, and `"id(signing")`. Since these plugins are part of
+[the Gradle distribution]({% post_url 2024-12-18-What-The-Distribution %}), their JAR files are already present on your
+machine by when you execute Gradle.
 
-The trickier bit is what happens to [community plugins](https://docs.gradle.org/current/userguide/plugin_basics.html#2_community_plugins)
-that ship on a Maven server somewhere. By default, Gradle will only search for plugins on Gradle Plugin Portal, but you
-can customize it in `settings.gradle.kts` using:
+The more intricate part involves [community plugins](https://docs.gradle.org/current/userguide/plugin_basics.html#2_community_plugins)
+that are hosted on Maven repositories. By default, Gradle searches for plugins exclusively on Gradle Plugin Portal.
+However, you can extend this search by configuring additional repositories your in `settings.gradle.kts` file:
 
 ```kotlin
 pluginManagement {
@@ -35,12 +35,14 @@ pluginManagement {
 }
 ```
 
-Plugins are just JVM libraries. To get from a plugin ID to the Maven coordinates for that plugin Gradle uses
-[Plugin Marker Artifacts](https://docs.gradle.org/current/userguide/plugins.html#sec:plugin_markers). You can think of
-them as a transparent redirect. For `id("com.android.library) version("8.9.0")` Gradle tries to fetch
-`com.android.library:com.android.library.gradle.plugin:8.9.0` in every repository
-you declared in your `settings.gradle.kts`. Eventually, it fetches [the pom file](https://dl.google.com/android/maven2/com/android/library/com.android.library.gradle.plugin/8.9.0/com.android.library.gradle.plugin-8.9.0.pom)
-that has a dependency to the implementation of this plugin
+Plugins are essentially JVM libraries. To translate a plugin ID to its corresponding Maven coordinates, Gradle uses
+[Plugin Marker Artifacts](https://docs.gradle.org/current/userguide/plugins.html#sec:plugin_markers). These act as
+transparent redirects.
+
+For instance, when you declare `id("com.android.library) version("8.9.0")`, Gradle attempts to retrieve
+`com.android.library:com.android.library.gradle.plugin:8.9.0` from each repository specified in your
+`settings.gradle.kts`. Ultimately, it fetches [the POM file](https://dl.google.com/android/maven2/com/android/library/com.android.library.gradle.plugin/8.9.0/com.android.library.gradle.plugin-8.9.0.pom),
+which contains a dependency on the actual plugin implementation:
 
 ```xml
   <dependencies>
@@ -52,19 +54,22 @@ that has a dependency to the implementation of this plugin
   </dependencies>
 ```
 
-Nice thing about the Plugin Markers is that you can move the implementation of a plugin to a completely different Maven
-coordinate and your end users have to make no changes.
+A significant advantage of Plugin Markers is that you relocate a plugin's implementation to a different Maven coordinate
+without requiring any modifications from end-users.
 
-If you are building a [binary Gradle plugin](https://docs.gradle.org/current/userguide/implementing_gradle_plugins_binary.html)
-for your build logic, and you want to configure another plugin, for example `id("com.android.library)`, you now know
-you can add
+If you are developing a [binary Gradle plugin](https://docs.gradle.org/current/userguide/implementing_gradle_plugins_binary.html)
+and need to configure another plugin, such as `id("com.android.library)`, you can include its marker artifact as
+a `compileOnly` dependency:
+
 ```kotlin
 dependencies {
     compileOnly("com.android.library:com.android.library.gradle.plugin:8.9.0")
 }
 ```
 
-If you are trying to codify it, you can use
+To streamline this process, you can create a helper function to generate the Maven coordinate from a plugin ID and
+version:
+
 ```kotlin
 fun idToMavenCoordinate(id: String, version: String): String {
     return "$id:$id.gradle.version:$version"
