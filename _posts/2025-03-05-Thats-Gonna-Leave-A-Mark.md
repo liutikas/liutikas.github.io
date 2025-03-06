@@ -72,6 +72,6 @@ version:
 
 ```kotlin
 fun idToMavenCoordinate(id: String, version: String): String {
-    return "$id:$id.gradle.version:$version"
+    return "$id:$id.gradle.plugin:$version"
 }
 ```
