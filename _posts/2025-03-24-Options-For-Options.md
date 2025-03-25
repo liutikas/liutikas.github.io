@@ -2,6 +2,7 @@
 layout: post
 title:  Options for Options - Ways to Pass Arguments to Gradle
 header: header-eng
+mastodon: 114220254831812831
 ---
 
 When setting up your build, you might need to pass arguments to the Gradle, such as binary toggles like `"release-build=true"`
