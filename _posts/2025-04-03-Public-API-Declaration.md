@@ -2,6 +2,7 @@
 layout: post
 title:  Public (API) Declaration
 header: header-eng
+mastodon: 114276196098364550
 ---
 
 It's helpful to think of libraries as having of two parts:
