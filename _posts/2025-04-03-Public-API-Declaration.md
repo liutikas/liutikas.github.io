@@ -29,7 +29,7 @@ After following the steps above, when a user adds your library as a dependency i
 access to your API surface and the dependencies needed to use that API surface.
 
 **Important Note:** Gradle itself does not verify that you correctly marked all of your API dependencies. It will allow
-you to publish a library where a necessary API dependency was mistakenly declared as implementation. This it make
+you to publish a library where a necessary API dependency was mistakenly declared as implementation. This will make
 it impossible to use the part of your API surface that needs this dependency, forcing user to manually add that
 dependency explicitly.
 
