@@ -2,6 +2,7 @@
 layout: post
 title:  Treasure Cache - Gradle Cache Entries
 header: header-eng
+mastodon: 114338029762886139
 ---
 
 You are likely already using Gradle build cache (`org.gradle.caching=true`) and enjoying significant gains in productivity.
