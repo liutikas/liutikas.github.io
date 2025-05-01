@@ -2,6 +2,7 @@
 layout: post
 title:  Escape (de)Velocity - Artisanal Debugging of Tasks
 header: header-eng
+mastodon: 114434284857842652
 ---
 
 Debugging Gradle tasks can be challenging, especially when you have no access to tools like Develocity or need to work
