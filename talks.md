@@ -7,8 +7,12 @@ header: header-eng
 
 <p id="content-center">My talks:</p>
 
+<p>2025</p>
+<p>
+APIs: How Hard Can They Be? - KotlinConf 2025 (<a href="https://speakerdeck.com/aurimas/apis-how-hard-can-they-be">slides</a>)
+</p>
+
 <p>2024</p>
-<p id="content-center">
 <p>
 <a href="https://www.droidcon.com/2024/11/22/gradle-the-build-system-that-loves-to-hate-you/">Gradle: The Build System That Loves To Hate You - droidcon London 2024</a> (<a href="https://speakerdeck.com/aurimas/gradle-the-build-system-that-loves-to-hate-you">slides</a>)
 </p>
