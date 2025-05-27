@@ -18,22 +18,22 @@ To get this richer information, you can add the following snippet to your build:
 
 ```kotlin
 fun Project.setUpTaskDetails() {
-    tasks.configureEach { task ->
+    tasks.configureEach {
         // Store dependencies in a provider to ensure they are resolved lazily
         // and can be safely read in doFirst/doLast.
-        val deps = project.provider { task.taskDependencies.getDependencies(task).map { it.path } }
-        task.doFirst {
+        val deps = project.provider { taskDependencies.getDependencies(this).map { it.path } }
+        doFirst {
             println("""
-name: ${task.path}
-type: ${task::class.java.superclass}
+name: $path
+type: ${this::class.java.superclass}
 inputProperties:
-${task.inputs.properties.entries.joinToString(separator = "\n - ") { "${it.key}: ${it.value}" }}
+${inputs.properties.entries.joinToString(separator = "\n - ") { "${it.key}: ${it.value}" }}
 inputsFiles:
-${task.inputs.files.joinToString(prefix=" - ", separator = "\n - ")}
+${inputs.files.joinToString(prefix=" - ", separator = "\n - ")}
 sourcefiles:
-${task.inputs.sourceFiles.joinToString(prefix=" - ", separator = "\n - ")}
+${inputs.sourceFiles.joinToString(prefix=" - ", separator = "\n - ")}
 outputs:
-${task.outputs.files.joinToString(prefix=" - ", separator = "\n - ")}
+${outputs.files.joinToString(prefix=" - ", separator = "\n - ")}
 dependencies:
 ${deps.get().joinToString(prefix=" - ", separator = "\n - ")}
     """)
