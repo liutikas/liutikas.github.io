@@ -27,7 +27,7 @@ fun Project.setUpTaskDetails() {
 name: ${task.path}
 type: ${task::class.java.superclass}
 inputProperties:
-${task.inputs.properties.entries.joinToString(separator = "\n - ") { "${it.key}: ${it.value}" }}
+${task.inputs.properties.entries.joinToString(prefix=" - ", separator = "\n - ") { "${it.key}: ${it.value}" }}
 inputsFiles:
 ${task.inputs.files.joinToString(prefix=" - ", separator = "\n - ")}
 sourcefiles:
@@ -49,7 +49,10 @@ Example output:
 ```text
 name: :lib:jar
 type: class org.gradle.api.tasks.bundling.Jar
-inputs:
+inputProperties:
+ - metadataCharset: UTF-8
+ - entryCompression: DEFLATED
+inputsFiles:
  - /tasks-debug/lib/build/classes/kotlin/main/META-INF/lib.kotlin_module
  - /tasks-debug/lib/build/classes/kotlin/main/org/example/Library.class
  - /tasks-debug/lib/build/tmp/jar/MANIFEST.MF
