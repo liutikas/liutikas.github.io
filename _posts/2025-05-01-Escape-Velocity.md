@@ -26,7 +26,9 @@ fun Project.setUpTaskDetails() {
             println("""
 name: ${task.path}
 type: ${task::class.java.superclass}
-inputs:
+inputProperties:
+${task.inputs.properties.entries.joinToString(separator = "\n - ") { "${it.key}: ${it.value}" }}
+inputsFiles:
 ${task.inputs.files.joinToString(prefix=" - ", separator = "\n - ")}
 sourcefiles:
 ${task.inputs.sourceFiles.joinToString(prefix=" - ", separator = "\n - ")}
