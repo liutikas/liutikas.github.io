@@ -2,6 +2,7 @@
 layout: post
 title:  Pom Pom Pom 🎶 - Have we reached the end of life?
 header: header-eng
+mastodon: 114673454301919245
 ---
 
 ## Brief history of POM file proliferation
