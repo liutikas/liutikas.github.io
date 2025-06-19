@@ -9,7 +9,7 @@ header: header-eng
 
 <p>2025</p>
 <p>
-APIs: How Hard Can They Be? - KotlinConf 2025 (<a href="https://speakerdeck.com/aurimas/apis-how-hard-can-they-be">slides</a>)
+<a href="https://youtu.be/JKLqQiYh8GQ?si=Hn3UMJfs7skcrMk6">APIs: How Hard Can They Be? - KotlinConf 2025</a> (<a href="https://speakerdeck.com/aurimas/apis-how-hard-can-they-be">slides</a>)
 </p>
 
 <p>2024</p>
