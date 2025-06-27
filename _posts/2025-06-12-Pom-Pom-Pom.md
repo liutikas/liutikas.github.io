@@ -39,7 +39,7 @@ always work, e.g. it might be hard to pick an artifact that works for every OS.
 
 One workaround for this is using [classifiers](https://maven.apache.org/pom.html#:~:text=The%20classifier%20distinguishes%20artifacts%20that%20were%20built%20from%20the%20same%20POM%20but%20differ%20in%20content)
 that allows you to specify `com.example:example:1.0.0:android`. This notation allows consumers to resolve `example-1.0.0-android.jar`
-instead the default `example-1.0.0-android.jar`. This works until you want to publish another library
+instead the default `example-1.0.0.jar`. This works until you want to publish another library
 `com.other:other` that depends on this existing library. There is only a single `<dependencies>` block in the POM
 file, so when `com.other:other` adds an entry for `com.example:example` it has to pick specify
 `<classifier>android</classifier>` or it will default to the main artifact. That means someone using `com.other:other`
