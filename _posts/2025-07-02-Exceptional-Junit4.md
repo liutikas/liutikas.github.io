@@ -2,6 +2,7 @@
 layout: post
 title:  Exceptional JUnit4 - How Does A Test Fail Successfully?
 header: header-eng
+mastodon: 114786117397336631
 ---
 
 I've spent a lot of time writing JUnit4 tests, but never really spent time to understand how they work behind the
