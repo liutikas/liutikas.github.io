@@ -28,7 +28,7 @@ files allowing other users to consume these libraries. POM files that were origi
 format turned into a very valuable compatibility layer / de facto standard for JVM build systems to inter-op with each
 other, thus allowing JVM ecosystem to flourish.
 
-Sadly, POM format is not a perfect solution for remote artifact consumptions, and this post will share a few reasons
+Sadly, POM format is not a perfect solution for remote artifact consumption, and this post will share a few reasons
 why it might be the case.
 
 ## Assumption about a single artifact
