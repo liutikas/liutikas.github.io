@@ -5,22 +5,31 @@ header: header-eng
 mastodon: 114673454301919245
 ---
 
+Note: This post has been edited on July 2, 2025 to clarify details about POMs.
+
 ## Brief history of POM file proliferation
 
 Maven build system uses [`.pom`](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) (POM) files
-for both defining how a library should be built and as metadata to consumers of the library such as a list of dependent
-libraries. The Maven build system and thus the POM files take a largely Java/JVM-centric view where the default
+to define how a library should be built and what other libraries this project depends on. The same POM file is reused
+when this library is published to a remote Maven artifact repository (e.g. MavenCentral), so the consumers can get these
+artifacts and all dependencies needed to use it. It is a neat idea allowing consumers to skip building every single
+dependency from scratch, which is the way that is common in other ecosystems.
+
+The Maven build system itself is a generic automation tool, but by default it focuses of Java/JVM needs. Therefore,
+the POM files also take a largely Java/JVM-centric view, for example, if not otherwise specified, the default
 artifact's and dependencies' format is a `.jar` (JAR).
 
-Maven POM file popularity has lead to other build systems, such as Gradle, to build adapter layers for the publishing
-and the consumption of already published Java libraries. That means that Gradle is able to parse and interpret POM
-files on Maven artifact servers (such as MavenCentral) and use them regardless of the build system used to build those
-artifacts. Similarly, when publishing Java libraries, Gradle is able to generate POM files from Gradle's own
-`build.gradle.kts` build definition files allowing other users to consume these libraries. POM files that were
-originally a Maven build system specific format turned into a very valuable compatibility layer / de facto standard
-for JVM build systems to inter-op with each other, thus allowing JVM ecosystem to flourish.
+Remote Maven artifact repository and Maven POM file popularity has lead to other build systems, such as Gradle, to take
+advantage of this system and build adapter layers for the publishing and the consumption of already published Java
+libraries. That means that Gradle is able to parse and interpret POM files on Maven artifact repository
+(such as MavenCentral) and use them regardless of the build system used to build those artifacts. Similarly, when
+publishing Java libraries, Gradle is able to generate POM files from Gradle's own `build.gradle.kts` build definition
+files allowing other users to consume these libraries. POM files that were originally a Maven build system specific
+format turned into a very valuable compatibility layer / de facto standard for JVM build systems to inter-op with each
+other, thus allowing JVM ecosystem to flourish.
 
-Sadly, POM format is not a perfect solution, and this post will share a few reasons why it might be the case.
+Sadly, POM format is not a perfect solution for remote artifact consumptions, and this post will share a few reasons
+why it might be the case.
 
 ## Assumption about a single artifact
 
@@ -95,3 +104,9 @@ but it is not clear if this will merge and what the performance characteristics 
 In the meantime, POM user experience keeps getting worse due to the issues describe in this post, as well as [a variety
 of bugs in Gradle and KGP](https://github.com/bazel-contrib/rules_jvm_external/issues/1376#issuecomment-2968205021).
 Have we reached the end of life for POMs?
+
+## Addendum
+
+Maven is a great build tool and has had a huge impact on the Java/JVM ecosystem. This post is by no means a suggestion
+to avoid using it. The goal is more to discuss whether we could have more flexibility using something else to support
+an idea of artifact variants/flavors.
