@@ -2,6 +2,7 @@
 layout: post
 title:  New Phases - Gradle Configuration Store and Load
 header: header-eng
+mastodon: 114910285932492916
 ---
 
 For a long time Gradle had [three distinct build phases](https://docs.gradle.org/current/userguide/build_lifecycle.html#sec:build_phases)
