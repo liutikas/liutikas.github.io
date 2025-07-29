@@ -2,6 +2,7 @@
 layout: post
 title:  Parallel Bits - Which Parts of Gradle Run in Parallel
 header: header-eng
+mastodon: 114937939372031455
 ---
 
 By default, nearly the entire invocation of Gradle is done serially, but there are ways to make it partially parallel.
