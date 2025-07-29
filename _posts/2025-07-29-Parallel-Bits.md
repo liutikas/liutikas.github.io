@@ -29,6 +29,12 @@ Implement tasks using [Gradle worker API](https://docs.gradle.org/current/usergu
 with `org.gradle.configuration-cache=true` or [Gradle Parallel Execution](https://docs.gradle.org/current/userguide/performance.html#sec:enable_parallel_execution)
 mode with `org.gradle.parallel=true`.
 
+**Parallel IDE model building during Gradle Sync**
+
+Enabling [Gradle Parallel Execution](https://docs.gradle.org/current/userguide/performance.html#sec:enable_parallel_execution)
+mode with `org.gradle.parallel=true` and using [Android Studio Electric Eel](https://android-developers.googleblog.com/2023/01/android-studio-electric-eel.html)
+or newer.
+
 **Parallel test execution within a JVM test task**
 
 Setting the number of parallel forks via [Test.setMaxParallelForks](https://docs.gradle.org/nightly/javadoc/org/gradle/api/tasks/testing/Test.html#setMaxParallelForks(int)).
