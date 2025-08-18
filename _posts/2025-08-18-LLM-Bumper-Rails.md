@@ -2,6 +2,7 @@
 layout: post
 title:  LLM Bumper Rails - New Problems Same Techniques
 header: header-eng
+mastodon: 115052117111662841
 ---
 
 High quality products tend to make users happier, but making high quality software is not an easy task. Static analysis tools like 
