@@ -2,6 +2,7 @@
 layout: post
 title:  Gradle Tower of Babel - Building on Top Of Other Plugins
 header: header-eng
+mastodon: 115148763188232128
 ---
 
 Gradle provides almost no guidance on how to build a Gradle plugin that builds on top of a different Gradle plugin.
