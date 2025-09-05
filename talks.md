@@ -9,6 +9,12 @@ header: header-eng
 
 <p>2025</p>
 <p>
+The Benevolent Gradle Overlord: Keeping Order - droidcon London 2025
+</p>
+<p>
+Gradle: Your Build, Your Rules - DPE Summit SF 2025
+</p>
+<p>
 <a href="https://youtu.be/JKLqQiYh8GQ?si=Hn3UMJfs7skcrMk6">APIs: How Hard Can They Be? - KotlinConf 2025</a> (<a href="https://speakerdeck.com/aurimas/apis-how-hard-can-they-be">slides</a>)
 </p>
 
