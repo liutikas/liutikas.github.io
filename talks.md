@@ -55,7 +55,7 @@ Gradle: Your Build, Your Rules - DPE Summit SF 2025
 <p>2019</p>
 
 <p>
-<a href="https://www.youtube.com/watch?v=sQC9-Rj2yLI">Build bigger, better: Gradle for large projects - Google I/O 2019</a>
+<a href="https://www.youtube.com/watch?v=sQC9-Rj2yLI">Build bigger, better: Gradle for large projects - Google I/O 2019</a> (<a href="https://speakerdeck.com/aurimas/build-bigger-better-gradle-for-large-projects">slides</a>)
 </p>
 
 <p>2018</p>
