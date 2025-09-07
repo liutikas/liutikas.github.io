@@ -5,7 +5,7 @@ permalink: /photography/
 header: header-photo
 ---
 
-<p id="content-center">Portraits</p>
+<h2 id="content-center">Portraits</h2>
 <p id="content-center">
 	<a href="{{ site.url }}/portraits/IMG_4829-01.jpg"><img src="{{ site.url }}/portraits-thumbnails/IMG_4829-01.jpg" height="220" width="220"/></a>
 	<a href="{{ site.url }}/portraits/IMG_5938.jpg"><img src="{{ site.url }}/portraits-thumbnails/IMG_5938.jpg" height="220" width="220"/></a>
@@ -17,7 +17,7 @@ header: header-photo
 	<a href="{{ site.url }}/portraits/IMG_8528.jpg"><img src="{{ site.url }}/portraits-thumbnails/IMG_8528.jpg" height="220" width="220"/></a>
 	<a href="{{ site.url }}/portraits/IMG_6228.jpg"><img src="{{ site.url }}/portraits-thumbnails/IMG_6228.jpg" height="220" width="220"/></a>
 </p>
-<p id="content-center">Travel</p>
+<h2 id="content-center">Travel</h2>
 <p id="content-center">
 	<a href="{{ site.url }}/travel/IMG_9009.jpg"><img src="{{ site.url }}/travel-thumbnails/IMG_9009.jpg" height="147" width="220"/></a>
 	<a href="{{ site.url }}/travel/IMG_9248.jpg"><img src="{{ site.url }}/travel-thumbnails/IMG_9248.jpg" height="147" width="220"/></a>

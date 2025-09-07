@@ -46,8 +46,8 @@ const styles = `
 }
 
 .mastodon-comment .author .avatar img {
-  margin-right:1rem;
-  min-width:60px;
+  margin-right: 10px;
+  min-width:40px;
   border-radius: 5px;
 }
 
@@ -57,12 +57,10 @@ const styles = `
 }
 
 .mastodon-comment .author .details .name {
-  font-weight: bold;
 }
 
 .mastodon-comment .author .details .user {
-  color: #5d686f;
-  font-size: medium;
+  font-size: small;
 }
 
 .mastodon-comment .author .date {
@@ -71,7 +69,7 @@ const styles = `
 }
 
 .mastodon-comment .content {
-  margin: 15px 20px;
+  margin: 15px 0px;
 }
 
 .mastodon-comment .attachments {
@@ -101,16 +99,40 @@ const styles = `
   text-decoration: none;
 }
 
+.mastodon-comment .status a img, #mastodon-stats a img {
+  vertical-align: middle;
+}
+
+.mastodon-comment .status a:hover, #mastodon-stats a:hover {
+  filter: invert(16%) sepia(85%) saturate(6000%) hue-rotate(350deg) brightness(95%) contrast(110%);
+}
+
 .mastodon-comment .status .replies.active a, #mastodon-stats .replies.active a {
   color: #3d87ff;
+}
+
+.mastodon-comment .status .replies.active a:hover, #mastodon-stats .replies.active a:hover {
+  color: red;
+}
+
+.mastodon-comment .status .replies.active a img, #mastodon-stats .replies.active a img {
+  filter: sepia(1) saturate(10) hue-rotate(200deg);
 }
 
 .mastodon-comment .status .reblogs.active a, #mastodon-stats .reblogs.active a {
   color: #8c8dff;
 }
 
+.mastodon-comment .status .reblogs.active a img, #mastodon-stats .reblogs.active a img {
+  filter: sepia(1) saturate(10) hue-rotate(220deg);
+}
+
 .mastodon-comment .status .favourites.active a, #mastodon-stats .favourites.active a {
   color: #ca8f04;
+}
+
+.mastodon-comment .status .favourites.active a img, #mastodon-stats .favourites.active a img {
+  filter: sepia(1) saturate(10) hue-rotate(25deg);
 }
 `;
 
@@ -172,7 +194,7 @@ class MastodonComments extends HTMLElement {
       <div class="replies ${this.toot_active(toot, "replies")}">
         <a href="${
           toot.url
-        }" rel="nofollow"><img src="/assets/reply.png" width="20px" height="20px" style="vertical-align: middle; filter: sepia(1) saturate(10) hue-rotate(200deg);">${this.toot_count(
+        }" rel="nofollow"><img src="/assets/reply.png" width="20px" height="20px">${this.toot_count(
           toot,
           "replies",
         )}</a>
@@ -180,7 +202,7 @@ class MastodonComments extends HTMLElement {
       <div class="reblogs ${this.toot_active(toot, "reblogs")}">
         <a href="${
           toot.url
-        }" rel="nofollow"><img src="/assets/share.png" width="20px" height="20px" style="vertical-align: middle; filter: sepia(1) saturate(10) hue-rotate(220deg);">${this.toot_count(
+        }" rel="nofollow"><img src="/assets/share.png" width="20px" height="20px">${this.toot_count(
           toot,
           "reblogs",
         )}</a>
@@ -188,7 +210,7 @@ class MastodonComments extends HTMLElement {
       <div class="favourites ${this.toot_active(toot, "favourites")}">
         <a href="${
           toot.url
-        }" rel="nofollow"><img src="/assets/star.png" width="20px" height="20px" style="vertical-align: middle; filter: sepia(1) saturate(10) hue-rotate(25deg);">${this.toot_count(
+        }" rel="nofollow"><img src="/assets/star.png" width="20px" height="20px">${this.toot_count(
           toot,
           "favourites",
         )}</a>
@@ -228,22 +250,20 @@ class MastodonComments extends HTMLElement {
           <div class="avatar">
             <img src="${this.escapeHtml(
               toot.account.avatar_static,
-            )}" height=60 width=60 alt="">
+            )}" height=40 width=40 alt="">
           </div>
           <div class="details">
-            <a class="name" href="${toot.account.url}" rel="nofollow">${
-              toot.account.display_name
-            }</a>
-            <a class="user" href="${
-              toot.account.url
-            }" rel="nofollow">${this.user_account(toot.account)}</a>
+            <a class="name" href="${toot.account.url}" rel="nofollow">${toot.account.display_name}<br/>
+            <div class="user" href="${toot.account.url}" rel="nofollow">${this.user_account(toot.account)}</div>
+            </a>
+
           </div>
           <a class="date" href="${
             toot.url
           }" rel="nofollow">${toot.created_at.substr(
             0,
             10,
-          )} ${toot.created_at.substr(11, 8)}</a>
+          )}</a>
         </div>
         <div class="content">${toot.content}</div>
         <div class="attachments">

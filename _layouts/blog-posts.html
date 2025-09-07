@@ -5,7 +5,7 @@ layout: default
 
   <div class="post-content">
     {% for post in site.posts %}
-      <p><a href="{{ post.url | relative_url }}">{{post.title}}</a><br/><i>Posted on {{ post.date | date: "%Y-%m-%d" }}</i></p>
+      <p><a href="{{ post.url | relative_url }}">{{post.title}}</a><br/><i>Posted on {{ post.date | date: "%Y/%m/%d" }}</i></p>
     {% endfor %}
   </div>
 

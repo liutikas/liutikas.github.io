@@ -373,7 +373,7 @@ mastodon-comments {
     --font-color: #333;
     --font-size: 1.0rem;
 
-    --block-border-width: 1px;
+    --block-border-width: 0px;
     --block-border-radius: 10px;
     --block-border-color: #ededf0;
     --block-background-color: #f8f8f8;

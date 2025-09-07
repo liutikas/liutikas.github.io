@@ -4,13 +4,13 @@ layout: default
 <article class="post">
 
   <div class="post-content">
-    <div><b>{{ page.title }}</b></div>
-    <div>Posted on {{ page.date | date: "%Y-%m-%d" }}</div>
+    <h2>{{ page.title }}</h2>
+    <div><i>Posted on {{ page.date | date: "%Y/%m/%d" }}</i></div>
     {{ content }}
 
     {% if page.mastodon %}
     <mastodon-comments host="androiddev.social" user="Aurimas" tootId="{{ page.mastodon }}"></mastodon-comments>
     {% endif %}
-  </div>
+  </h2>
 
 </article>
