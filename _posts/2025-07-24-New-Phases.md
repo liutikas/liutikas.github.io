@@ -23,7 +23,7 @@ of initialization and configuration were identical to previous Gradle runs, but 
 This observation turned into a multi-year quest for Gradle and the plugin ecosystem to support [configuration cache](https://docs.gradle.org/current/userguide/configuration_cache.html)
 feature that allows Gradle to skip the configuration phase if it knows the task graph is unchanged saving all of this
 wasted time. With Gradle `9.0.0` [configuration cache is becoming a preferred execution mode](https://gradle.org/whats-new/gradle-9/#:~:text=a%20different%20lifecycle.-,Configuration%20Cache,-The%20Configuration%20Cache)
-which is Gradle's way of saying they cannot make it the default as the long tail of plugins still don't support it (YO fix your plugins!), but
+which is Gradle's way of saying they cannot make it the default as the long tail of plugins still don't support it ([YO fix your plugins!](https://github.com/gradle/gradle/issues/13490)), but
 it will become the default in `10.0.0`.
 
 To make configuration cache work Gradle sneakily added two new phases to the build without Gradle docs talking about -
