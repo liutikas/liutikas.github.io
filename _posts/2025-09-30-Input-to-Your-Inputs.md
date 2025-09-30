@@ -2,6 +2,7 @@
 layout: post
 title:  Input to Your Inputs - What Invalidates Gradle Configuration Cache?
 header: header-eng
+mastodon: 115295261903200129
 ---
 
 By now you have hopefully adopted [Gradle's configuration cache (CC) feature](https://docs.gradle.org/current/userguide/configuration_cache.html),
