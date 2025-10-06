@@ -2,6 +2,7 @@
 layout: post
 title:  NoSuchFieldError - JavaVersion does not have member field 'JavaVersion$Companion Companion'
 header: header-eng
+mastodon: 115326304729718007
 ---
 
 AndroidX team strongly believes in [shadow jobs](https://slack.engineering/shadow-jobs/) to catch regressions early.
