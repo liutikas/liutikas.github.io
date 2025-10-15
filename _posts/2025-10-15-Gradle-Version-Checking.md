@@ -2,6 +2,7 @@
 layout: post
 title:  Gradle Version Checking - Finding an API hidden deep in the basement
 header: header-eng
+mastodon: 115380410786504619
 ---
 
 Every Gradle Plugin has an implicit minimum version of Gradle that it supports. If you simply write a plugin, test it
