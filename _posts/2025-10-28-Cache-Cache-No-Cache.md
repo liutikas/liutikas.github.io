@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  Cache, Cache, No Cache - When to use Gradle Build Cache? 
+title:  Cache, Cache, No Cache - When to use Gradle Build Cache?
 header: header-eng
+mastodon: 115451769649806985
 ---
 
 In the light of [CVE-2025-36852](https://nvd.nist.gov/vuln/detail/CVE-2025-36852) I figured it would be a good time to
