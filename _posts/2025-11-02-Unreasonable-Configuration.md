@@ -42,7 +42,7 @@ build_dry_run {
 This represents the same two commands we used when running Gradle manually. `clear-configuration-cache-state-before`
 causes Gradle profiler to delete `.gradle/configuration-cache/`.
 
-For example, if I want to benchmark `https://github.com/android/androidify` configuration phase, we can run:
+For example, if I want to benchmark [Androidify](https://github.com/android/androidify) configuration phase, we can run:
 
 ```bash
 ./build/install/gradle-profiler/bin/gradle-profiler \
