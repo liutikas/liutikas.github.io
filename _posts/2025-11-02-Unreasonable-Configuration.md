@@ -2,6 +2,7 @@
 layout: post
 title:  Unreasonable Configuration - What is a Normal Amount of Gradle Configuration Time?
 header: header-eng
+mastodon: 115482470047905697
 ---
 
 It is very difficult to fix something if you don't know what a normal behavior looks like. Through my conversations at
