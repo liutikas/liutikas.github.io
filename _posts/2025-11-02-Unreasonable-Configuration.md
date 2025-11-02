@@ -74,6 +74,8 @@ out was the overhead from using `com.diffplug.spotless` Gradle plugin.
 
 ![Gradle trace of androidify project](/assets/2025-11-02-flamegraph.png){:width="800px"}
 
+(Note, the times here are not comparable to the benchmark times because we are profiling)
+
 We can see that `LazyAllTheSame` does file validation during the Gradle *configuration* phase, instead of during task
 execution.
 
