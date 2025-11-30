@@ -7,7 +7,7 @@ header: header-eng
 
 <h2>2025</h2>
 <p>
-The Benevolent Gradle Overlord: Keeping Order - droidcon London 2025 (<a href="https://speakerdeck.com/aurimas/the-benevolent-gradle-overlord-keeping-order">slides</a>)
+<a href="https://youtu.be/o99f54pYGgc?si=mbNQp9E8616m_gna">The Benevolent Gradle Overlord: Keeping Order - droidcon London 2025</a> (<a href="https://speakerdeck.com/aurimas/the-benevolent-gradle-overlord-keeping-order">slides</a>)
 </p>
 <p>
 <a href="https://www.youtube.com/watch?v=uWx_TCbOicg">Gradle: Your Build, Your Rules - DPE Summit SF 2025</a> (<a href="https://speakerdeck.com/aurimas/gradle-your-build-your-rules">slides</a>)
