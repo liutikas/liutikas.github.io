@@ -2,6 +2,7 @@
 layout: post
 title:  Knocker-Uppers - PGP Validation of Gradle Wrapper and Distribution
 header: header-eng
+mastodon: 115709161521649985
 ---
 
 Many moons ago I wrote a post on [Gradle Security Considerations]({% post_url 2022-05-13-Gradle-Security-Considerations %})
