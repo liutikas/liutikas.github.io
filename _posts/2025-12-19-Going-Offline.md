@@ -2,6 +2,7 @@
 layout: post
 title:  Going Offline - Steps to a hermetic Gradle build
 header: header-eng
+mastodon: 115748798372064969
 ---
 
 By default, Gradle is effectively useless on an offline machine. Even fetching Gradle distribution itself requires
