@@ -65,7 +65,7 @@ With [signature verification enabled]({% post_url 2024-12-12-Trust-But-Verify-De
 </verification-metadata>
  ```
 
-Then, running `./gradlew myTask --export-keys` will the keys fetched from key servers in `gradle/verification-keyring.keys`.
+Then, running `./gradlew myTask --export-keys` will fetch the keys from key servers in `gradle/verification-keyring.keys`.
 
 **Kotlin Native toolchain**
 
