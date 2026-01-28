@@ -53,5 +53,8 @@ has a huge impact on the Gradle configuration time dropping it by 67%!
 Without this change Gradle profiler benchmark of `./gradlew build --dry-run` had 30,102 ms mean with 562 ms
 standard deviation, but after the change it decreased to 10,076 ms mean with 478 ms standard deviation.
 
+![Gradle profiler report before the change](/assets/2026-01-27-before.png){:width="800px"}
+![Gradle profiler report after the change](/assets/2026-01-27-after.png){:width="800px"}
+
 A well configured project should spend less than 100 ms per project in configuration. Even after this change androidify
 configuration takes about 630 ms per project. We still have more work to do!
