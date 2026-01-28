@@ -2,6 +2,7 @@
 layout: post
 title:  Spray and Pray - Cost of Overly-Broad Spotless Targets
 header: header-eng
+mastodon: 115970490537930025
 ---
 
 In the post on the [unseasonable Gradle configuration time]({% post_url 2025-11-02-Unreasonable-Configuration %})
