@@ -5,6 +5,11 @@ permalink: /talks/
 header: header-eng
 ---
 
+<h2>2026</h2>
+<p>
+<a href="https://youtu.be/O51j-RO_GQM?si=AP3PJflSBoC-vKQq">Benchmarking and profiling Gradle configuration times with Márton Braun</a>
+</p>
+
 <h2>2025</h2>
 <p>
 <a href="https://youtu.be/o99f54pYGgc?si=mbNQp9E8616m_gna">The Benevolent Gradle Overlord: Keeping Order - droidcon London 2025</a> (<a href="https://speakerdeck.com/aurimas/the-benevolent-gradle-overlord-keeping-order">slides</a>)
