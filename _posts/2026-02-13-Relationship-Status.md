@@ -2,6 +2,7 @@
 layout: post
 title:  Relationship Status of minSdk, compileSdk, targetSdk
 header: header-eng
+mastodon: 116065477843363072
 ---
 
 It is year 2026 and yet Android developers continue to be mystified about `minSdk`, `compileSdk`, and `targetSdk`.
