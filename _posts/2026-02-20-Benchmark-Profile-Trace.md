@@ -64,4 +64,4 @@ Here is an example trace from our API tracking tool Metalava that runs on a JVM
 ![Perfetto trace](/assets/2026-02-20-trace.png){:width="800px"}
 
 All of these techniques are very helpful and can often be used in tandem. Tracing is often the most overlooked and can
-be amazing to investigate issues in your production applications.
+be amazing for investigating issues in your production applications.
