@@ -2,6 +2,7 @@
 layout: post
 title:  Benchmark, Profile, Trace - What's the difference?
 header: header-eng
+mastodon: 116105011864400545
 ---
 
 For the longest time benchmarking, profiling, and tracing seemed like synonyms to me. I didn't have an appreciation for
