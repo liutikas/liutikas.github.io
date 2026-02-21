@@ -13,7 +13,7 @@ Generally, a single benchmark measures the time of single operation that is run 
 as often there are caches/slow paths involved in these runs. The environment is set up to make results as realistic and
 as consistent as possible, for example benchmark might lock the operating frequency of your CPU to avoid noise from CPU
 governor. As long as the environment is representative of your users, the absolute value of the benchmark result is
-an accurate representation of time spent. Benchmarks are great to measure the affects of your changes.
+an accurate representation of time spent. Benchmarks are great to measure the effects of your changes.
 
 **Profiling** is also a technique for getting a sense on how long an operation is taking, but instead of the coarse view
 you want to see the time taken by different parts of your operation. This view can help you identify slow work. Similar
