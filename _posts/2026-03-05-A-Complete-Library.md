@@ -2,6 +2,7 @@
 layout: post
 title:  A Complete Library
 header: header-eng
+mastodon: 116178740307843639
 ---
 
 Block 40% layoffs has spurred a lot of discussions about open source projects attached to a for-profit corporation.
