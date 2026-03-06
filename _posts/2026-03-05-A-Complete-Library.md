@@ -34,7 +34,7 @@ the development.
 Abandoned libraries on the other hand are on the opposite side of the risk scale, they come with a very large potential
 cost to your project, they are effectively unfinished and unsupported.
 
-Importantly, there are other factors besides the version/release time that affect the category. For example s deep
+Importantly, there are other factors besides the version/release time that affect the category. For example a deep
 reliance on a fast moving dependency such as a stable library that relies on a Kotlin compiler plugin. This library
 might not be a complete library due to the fact that it can never stop the development without breaking, thus adding
 a high risk factor to your project.
