@@ -2,6 +2,7 @@
 layout: post
 title:  Scope Reap - What are you calling?
 header: header-eng
+mastodon: 116452350627582061
 ---
 
 Let's say we have `foo/bar/build.gradle` file with the following contents:
