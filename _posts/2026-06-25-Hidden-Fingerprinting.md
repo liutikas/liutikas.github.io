@@ -2,6 +2,7 @@
 layout: post
 title:  Hidden Fingerprinting - Hard to Measure Gradle Task Cost
 header: header-eng
+mastodon: 116813741317098512
 ---
 
 Let's say you have a simple task that prints out current git commit:
