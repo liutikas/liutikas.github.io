@@ -12,7 +12,7 @@ and you have a limited amount of time to spend on tests. It takes away some of t
 I think of the testing pyramid as an attention pyramid. It can be extended beyond tests to your production code. Where
 should you spend your limited attention to get the best outcomes?
 
-![Attention pyramid](/assets/2026-07-12-pyramid.png)
+![Attention pyramid](/assets/2026-07-12-pyramid.png){:width="800px"}
 
 The lower levels of the pyramid tend to have a much higher impact, as a single bad decision can be multiplied by several
 orders of magnitude more than something at a higher levels. Therefore, if you were going to cut some corners, it is best
