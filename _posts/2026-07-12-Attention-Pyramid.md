@@ -2,6 +2,7 @@
 layout: post
 title:  Attention Pyramid
 header: header-eng
+mastodon: 116910269906404031
 ---
 
 If you worked enough time with software, you must have crossed paths with the idea of a testing pyramid. It is a handy
