@@ -7,7 +7,7 @@ header: header-eng
 
 <h2>2026</h2>
 <p>
-Moments When Things Go Wrong - KotlinConf 2026 (<a href="https://speakerdeck.com/aurimas/moments-when-things-go-wrong">slides</a>)
+<a href="https://youtu.be/bavxLLEGX4w?si=8ds66VhAugUEEDE5">Moments When Things Go Wrong - KotlinConf 2026</a> (<a href="https://speakerdeck.com/aurimas/moments-when-things-go-wrong">slides</a>)
 </p>
 <p>
 <a href="https://youtu.be/O51j-RO_GQM?si=AP3PJflSBoC-vKQq">Benchmarking and profiling Gradle configuration times with Márton Braun</a>
