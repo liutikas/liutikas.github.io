@@ -2,6 +2,7 @@
 layout: post
 title: What Are You Syncing About?
 header: header-eng
+mastodon: 117033832563717682
 ---
 
 ![Sync Project with Gradle Files button in Android Studio](/assets/2026-08-03-elephant-button.png)
