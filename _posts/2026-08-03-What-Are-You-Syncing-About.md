@@ -21,7 +21,7 @@ details it retrieves about the project:
 - What flags are passed to Kotlin compiler (e.g. `allWarningsAsErrors = true`)
 
 and many more. These details can change with `build.gradle.kts`, `settings.gradle.kts`, `gradle.properties`, `buildSrc`,
-and many other changes, so any time these get invalidate you will get a dreaded:
+and many other changes, so any time these get invalidated you will get a dreaded:
 
 ![Gradle files have changes since last project sync. Sync now](/assets/2026-08-03-sync-now.png){:width="800px"}
 
