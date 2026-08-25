@@ -2,6 +2,7 @@
 layout: post
 title: Configuration Bomb for Eager Task Realization
 header: header-eng
+mastodon: 117158173511738128
 ---
 
 Gradle has been pushing developers to migrate from the eager `tasks.create` to the lazy `tasks.register`. The former
