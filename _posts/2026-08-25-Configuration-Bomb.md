@@ -28,3 +28,5 @@ tasks.register("configurationBomb") {
 
 You effectively create a task in each project that should never be configured and if that ever changes, your build will
 fail with the stacktrace to the culprit 💣.
+
+If you want something out of the box, you can pick up [Eli Graber's Gradle Plugin](https://github.com/eygraber/gradle-config-bomb-plugin).
