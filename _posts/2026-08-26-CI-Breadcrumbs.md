@@ -2,6 +2,7 @@
 layout: post
 title: CI Breadcrumbs
 header: header-eng
+mastodon: 117164580669288431
 ---
 
 Hitting a failure in continuous integration (CI) can be really frustrating, especially if that failure happens in a flaky
