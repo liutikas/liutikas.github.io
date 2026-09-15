@@ -2,6 +2,7 @@
 layout: post
 title: Kotlin Double Bind
 header: header-eng
+mastodon: 117276336249034155
 ---
 
 It is a great idea to give your library consumers maximum possible flexibility. In my post about [conservative librarian]({% post_url 2025-01-10-Conservative-Librarian %})
