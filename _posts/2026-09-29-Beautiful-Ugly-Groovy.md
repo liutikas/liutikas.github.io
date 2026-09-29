@@ -2,6 +2,7 @@
 layout: post
 title: Beautiful Ugly Groovy
 header: header-eng
+mastodon: 117355504234355054
 ---
 
 Let's say in your `build.gradle` scripts you want to allow users to set some values from a preset list
