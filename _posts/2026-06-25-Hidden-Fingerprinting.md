@@ -85,29 +85,33 @@ If you need something shared across multiple projects, you can use `BuildService
 
 ```kotlin
 abstract class SharedProviderService : BuildService<SharedProviderService.Parameters> {
+    @get:Inject abstract val providers: ProviderFactory
     interface Parameters : BuildServiceParameters {
-        var gitShaProvider: Provider<String>
+        var workingDir: DirectoryProperty
     }
-    fun getGitShaProvider(): Provider<String> = parameters.gitShaProvider
+    val gitShaProvider: Provider<String> = providers.of(GitHeadShaSource::class.java) {
+        parameters.workingDir.set(this.parameters.workingDir)
+    }
     companion object {
         internal fun registerOrGet(project: Project): SharedProviderService {
             return project.gradle.sharedServices.registerIfAbsent(
                 "sharedProviderService",
                 SharedProviderService::class.java,
             ) { spec ->
-                spec.parameters.gitShaProvider = project.providers.of(GitHeadShaSource::class.java) {
-                    parameters.workingDir.set(project.rootDir)
-                }
+                spec.parameters.workingDir.set(project.rootDir)
             }.get()
         }
     }
 }
 ```
 
+**Note** it is important not to put the provider itself in the `BuildService.Parameters` as those get realized and added
+as input to configuration cache. Instead, pass in things that you need to be able to create a `val`.
+
 Then you can do:
 
 ```kotlin
-val gitShaProvider = SharedProviderService.registerOrGet(project).getGitShaProvider()
+val gitShaProvider = SharedProviderService.registerOrGet(project).gitShaProvider
 tasks.register("myTask1", MyTask::class.java) {
     gitSha.set(gitShaProvider)
 }
