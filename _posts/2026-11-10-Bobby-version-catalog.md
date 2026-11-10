@@ -2,6 +2,7 @@
 layout: post
 title: Bobby Version Catalog
 header: header-eng
+mastodon: 117593767179916295
 ---
 
 Gradle released [`9.9.1`](https://docs.gradle.org/9.9.1/release-notes.html) that includes a fix for
